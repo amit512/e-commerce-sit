@@ -1,0 +1,157 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #111;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Logo Section */
+.navbar-logo h2 {
+  font-size: 1.8rem;
+  color: #e94560;
+  cursor: pointer;
+}
+.navbar-logo :link{
+  text-decoration: none;
+}
+
+/* Menu Items */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  color: #e94560;
+}
+.shopping-cart {
+  color: #fff;
+}
+/* Icons Section */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  }
+  
+  .search-bar button {
+    background-color: #e94560;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    }
+    
+    .icon {
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: color 0.3s ease;
+      }
+      
+      .icon:hover {
+        color: #e94560;
+        }
+        
+
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+  display: none ;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  
+  .search-bar {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+  .navbar-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #111;
+    flex-direction: column;
+    width: 100px; 
+    gap: 20px;
+    padding: 0px;
+    height: calc(70vh - 60px);
+    
+    transform: translateY(-150%);
+    transition: transform 0.4s ease-in-out;
+    }
+    
+    
+  .navbar-menu.active {
+    transform: translateX(0);
+  }
+
+  .navbar-icons {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar-logo h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar-menu {
+    width: 100%;
+  }
+}
+
+/* Additional Improvements */
+.navbar-menu li {
+  padding: 10px 0; /* Added padding for better touch targets */
+}
+
+.search-bar input::placeholder {
+  color: #ccc; /* Placeholder color for better visibility */
+}
+
+.search-bar button:hover {
+  background-color: #d83d50; /* Darker shade on hover for button */
+}

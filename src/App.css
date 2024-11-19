@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .banner {
+    height: 250px;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+
+  .flash-sales h2,
+  .categories h2 {
+    font-size: 1.8rem;
+  }
+
+  .product-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .category-list {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-right input {
+    width: 100%;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.banner {
+  animation: fadeIn 1s ease-in-out;
+}
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";

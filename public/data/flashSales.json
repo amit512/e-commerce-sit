@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "name": "Bracelet",
+      "discount": 40,
+      "originalPrice": 1600,
+      "rating": 4.5,
+      "reviews": 88,
+      "image": "/assets/flash/bracelet.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Dress",
+      "discount": 35,
+      "originalPrice": 2000,
+      "rating": 4.5,
+      "reviews": 75,
+      "image": "/assets/flash/dress.jpg"
+    },
+    {
+      "id": 3,
+      "name": "earring",
+      "discount": 30,
+      "originalPrice": 1200,
+      "rating": 4.7,
+      "reviews": 99,
+      "image": "/assets/flash/earring.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Hat",
+      "discount": 25,
+      "originalPrice": 900,
+      "rating": 4.6,
+      "reviews": 89,
+      "image": "/assets/flash/hat.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Sunglasses",
+      "discount": 15,
+      "originalPrice": 1500,
+      "rating": 4.6,
+      "reviews": 89,
+      "image": "/assets/flash/sunglasses.jpg"
+    }
+  ]
+  

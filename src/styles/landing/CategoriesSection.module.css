@@ -1,0 +1,73 @@
+.categoriesSection {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden; /* Prevent unwanted scrollbars */
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .categoryIndicator {
+    width: 8px;
+    height: 24px;
+    background-color: #e74c3c;
+    border-radius: 4px;
+  }
+  
+  .sectionTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 15px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+  }
+  
+  .categoryCard {
+    flex: 0 0 150px; /* Control card width */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .categoryCard:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .active {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  .iconStyle {
+    font-size: 30px;
+    color: inherit;
+    margin-bottom: 10px;
+  }
+  
+  .categoryName {
+    font-size: 16px;
+    font-weight: bold;
+    color: inherit;
+  }
+  
