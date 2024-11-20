@@ -78,6 +78,9 @@
   
   .flash-sales__add-to-cart:hover {
     background-color: #e74d3ccc;
+    transform:  scale(1.1);
+    transition: ease;
+    
   }
   
   .flash-sales__view-all {
