@@ -1,0 +1,126 @@
+/* Main Checkout Page Styling */
+.checkoutPage {
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Shipping Form Section */
+  .shippingForm {
+    flex: 2;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shippingForm h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .formGroup {
+    margin-bottom: 1rem;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .applyButton {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .applyButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Payment Options */
+  .paymentOptions label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Submit Button */
+  .submitButton {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .submitButton:hover {
+    background-color: #218838;
+  }
+  
+  /* Order Summary Section */
+  .orderSummary {
+    flex: 1;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .orderSummary h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .orderSummary ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .orderSummary ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff5722;
+  }
+  

@@ -1,47 +1,64 @@
+/* Main Card Container */
 .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-  
-  .details {
-    padding: 0.5rem;
-    text-align: center;
-  }
-  
-  .name {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  .price {
-    font-size: 1.2rem;
-    color: #ff5757;
-    margin-bottom: 0.5rem;
-  }
-  
-  .rating {
-    font-size: 0.9rem;
-    color: #f5c518;
-  }
-  
-  .ratingNumber {
-    font-size: 0.8rem;
-    color: #888;
-  }
-  
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.image {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: contain; /* Avoids cropping and ensures proper scaling */
+  background-color: #f9f9f9; /* Light gray for missing images */
+  padding: 10px;
+}
+
+/* Product Details Section */
+.details {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Product Name */
+.name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Product Price */
+.price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ff5722; /* Bright price color to stand out */
+  margin: 0.5rem 0;
+}
+
+/* Rating Section */
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.ratingNumber {
+  margin-left: 0.3rem;
+  font-size: 0.9rem;
+  color: #555;
+}
